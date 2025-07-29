@@ -1,0 +1,25 @@
+-------------------------------------------------------------------------------
+Test set: com.estudiantes.controlEstudiantes.BackendTests
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 16.16 s <<< FAILURE! -- in com.estudiantes.controlEstudiantes.BackendTests
+com.estudiantes.controlEstudiantes.BackendTests.testCrudEstudiante -- Time elapsed: 0.036 s <<< ERROR!
+com.estudiantes.controlEstudiantes.exception.DuplicateResourceException: Ya existe un estudiante con la cédula: 87654321
+	at com.estudiantes.controlEstudiantes.service.EstudianteService.crearEstudiante(EstudianteService.java:82)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at com.estudiantes.controlEstudiantes.service.EstudianteService$$SpringCGLIB$$0.crearEstudiante(<generated>)
+	at com.estudiantes.controlEstudiantes.BackendTests.testCrudEstudiante(BackendTests.java:57)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+
